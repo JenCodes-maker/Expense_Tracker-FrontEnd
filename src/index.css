@@ -1,0 +1,112 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+body{
+  background-color:#c8dfe7;
+}
+.expense-container{
+  background-color: #fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  max-width:600px;
+  margin:0 auto;
+  margin-top:50px;
+}
+.list-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  margin-bottom:10px;
+  /*border-right:2px solid red;*/
+}
+.list-item.income{
+  border-right:5px solid green;
+}
+.list-item.expense{
+  border-right: 5px solid red;
+}
+.list-item.income .item-amount{
+  color:green;
+}
+.list-item.expense .item-amount{
+  color:red;
+}
+.Expense-Form{
+  padding:10px;
+  padding-top:0;
+  border:1px solid #ddd;
+  border-radius:5px;
+  margin-top:20px;
+}
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:5px;/*margin between each element*/
+  margin-bottom:10px;/*margin bottom of the form group*/
+}
+input{
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+button{
+  width:100%;
+  border-radius:5px;
+  background-color: #5f04a19a;
+  color:#fff;
+  padding:10px;
+  cursor:pointer;
+  border:none;
+}
+.balance-container{
+  background-color:#5f04a19a;
+  border-radius:10px;
+  padding:20px;
+  display:flex;
+  justify-content:space-around
+}
+.currency-item{
+  display:flex;
+ 
+  flex-direction:column;
+  padding:10px;
+  align-items:center;
+  background-color:rgba(145, 99, 224, 0.701);
+  color:white;
+  border-radius:5px;
+  gap:5px
+}
+.currency-item .title{
+  font-size:20px;
+  text-transform:uppercase;
+}
+.currency-item .amount{
+  font-size : 30px;
+  font-weight: bold;
+}
+.currency-item .amount.income{
+  color:green;
+}
+.currency-item .amount.ex{
+  color:red;
+}
+.error{
+  color:rgba(245, 11, 11, 0.701);
+  font-size:14px;
+  margin-bottom: 10px;
+}
+.expense-item-editing{
+  border-right:#bc48d1;
+  border:2px;
+}
+.small-button{
+  width:auto;
+  height:auto;
+  
+}
